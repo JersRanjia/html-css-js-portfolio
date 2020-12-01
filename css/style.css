@@ -1,0 +1,23 @@
+* {
+    margin: 0px ;
+}
+
+li {
+    list-style-type: none ;
+}
+
+#rideau {
+    display: none ;
+}
+
+/*-------------------header-------------------*/
+#menu-page {
+    background: green ;
+}
+
+#menu-page ul{
+    display: flex;
+    flex-direction: row ;
+}
+
+/*-------------------main-------------------*/
