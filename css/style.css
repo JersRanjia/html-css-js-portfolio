@@ -1,9 +1,11 @@
 * {
     margin: 0px ;
+    font-family: "Segoe UI";
 }
 
 li {
     list-style-type: none ;
+    margin: 0px;
 }
 
 #rideau {
@@ -15,9 +17,14 @@ li {
     background: green ;
 }
 
-#menu-page ul{
+#menu-page ul {
     display: flex;
     flex-direction: row ;
+    justify-content: center;
+}
+
+#menu-page ul li {
+    margin-right: 20px;
 }
 
 /*-------------------main-------------------*/
@@ -27,6 +34,7 @@ main {
 
 #page-home {
     background: red ;
+    height: 100%;
 }
 
 #page-projects {
@@ -38,8 +46,36 @@ main {
 }
 
 /*-------------------page-home-------------------*/
+#page-home *{
+    margin: auto;
+}
+
 #self-description {
     background: pink;
+    max-width: 500px;
+}
+
+.self-introduction {
+    text-align: center;
+    overflow-wrap: break-word;
+}
+
+#pdp {
+    max-width: 200px;
+}
+
+#pdp img{
+    border-radius:100px;
+}
+
+#contacts ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#contacts ul li{
+    margin: 0px;
 }
 
 /*-------------------page-projects-------------------*/
