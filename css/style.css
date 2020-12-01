@@ -36,3 +36,17 @@ main {
 #page-works {
     background: darkgoldenrod;
 }
+
+/*-------------------page-home-------------------*/
+#self-description {
+    background: pink;
+}
+
+/*-------------------page-projects-------------------*/
+.project {
+    border: 2px solid black;
+}
+/*-------------------page-works-------------------*/
+.work {
+    border: 2px solid darkgray;
+}
