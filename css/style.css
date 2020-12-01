@@ -21,3 +21,18 @@ li {
 }
 
 /*-------------------main-------------------*/
+main {
+    background: aqua;
+}
+
+#page-home {
+    background: red ;
+}
+
+#page-projects {
+    background: chartreuse ;
+}
+
+#page-works {
+    background: darkgoldenrod;
+}
