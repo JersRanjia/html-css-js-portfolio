@@ -97,23 +97,33 @@ main {
 
 /*-------------------page-projects-------------------*/
 .project {
-    border: 2px solid black;
+    border: 2px solid white;
+    border-radius: 5px;
     width: 200px;
-    height: 200px;
+    height: 150px;
     margin-top: 50px;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
-
+    background: blue;
 }
 
 .project * {
-
     text-align: center;
+}
+
+.project h1, .project h2 {
+
+    font-weight: normal;
+    font-size: medium;
 
 }
 
+.fond-project {
+    width: 100%;
+    height: 100%;
+}
 
 #page-projects {
     display:flex;
