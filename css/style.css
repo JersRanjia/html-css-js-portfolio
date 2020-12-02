@@ -34,7 +34,6 @@ li {
 /*-------------------main-------------------*/
 main {
     background: aqua;
-
     height: 100%;
 }
 
@@ -43,18 +42,19 @@ main {
     /*-------*/
     height: 100%;
 
-    display: flex;
+    /*display: flex;    */
+    display: none;
     flex-direction: column;
 }
 
 #page-projects {
     background: chartreuse ;
-    display: none;
+    /*display: none;*/
 }
 
 #page-works {
     background: darkgoldenrod;
-    display: none;
+    /*display: none;*/
 }
 
 /*-------------------page-home-------------------*/
@@ -70,6 +70,7 @@ main {
 .self-introduction {
     text-align: center;
     overflow-wrap: break-word;
+
 }
 
 #pdp {
@@ -83,20 +84,51 @@ main {
     border-radius:100px;
 }
 
+#contacts ul li{
+    margin: 0px;
+}
+
 #contacts ul{
     display: flex;
     flex-direction: row;
     justify-content: center;
-}
-
-#contacts ul li{
-    margin: 0px;
+    padding: 0px;
 }
 
 /*-------------------page-projects-------------------*/
 .project {
     border: 2px solid black;
+    width: 200px;
+    height: 200px;
+    margin-top: 50px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
 }
+
+.project * {
+
+    text-align: center;
+
+}
+
+
+#page-projects {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap:wrap;
+    max-width: 600px;
+    margin: auto;
+}
+
+#scnd-year {
+    background: url("../img/iggl2.png");
+    background-size: 500px;
+}
+
 /*-------------------page-works-------------------*/
 .work {
     border: 2px solid darkgray;
