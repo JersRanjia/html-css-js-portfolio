@@ -42,19 +42,31 @@ main {
     /*-------*/
     height: 100%;
 
-    /*display: flex;    */
-    display: none;
+    display: flex;
+    /*display: none;*/
     flex-direction: column;
 }
 
 #page-projects {
     background: chartreuse ;
     /*display: none;*/
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap:wrap;
+    max-width: 600px;
+    margin: auto;
 }
 
 #page-works {
     background: darkgoldenrod;
-    /*display: none;*/
+    display: none;
+    /*display:flex;*/
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap:wrap;
+    max-width: 600px;
+    margin: auto;
 }
 
 /*-------------------page-home-------------------*/
@@ -125,15 +137,6 @@ main {
     height: 100%;
 }
 
-#page-projects {
-    display:flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    flex-wrap:wrap;
-    max-width: 600px;
-    margin: auto;
-}
-
 #scnd-year {
     background: url("../img/iggl2.png");
     background-size: 500px;
@@ -142,4 +145,16 @@ main {
 /*-------------------page-works-------------------*/
 .work {
     border: 2px solid darkgray;
+    border-radius: 5px;
+    width: 250px;
+    margin-top: 50px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: blue;
+}
+
+.tr-mission {
+    display: none;
 }
