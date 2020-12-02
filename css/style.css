@@ -3,6 +3,10 @@
     font-family: "Segoe UI";
 }
 
+html, body {
+    height: 100%;
+}
+
 li {
     list-style-type: none ;
     margin: 0px;
@@ -30,19 +34,27 @@ li {
 /*-------------------main-------------------*/
 main {
     background: aqua;
+
+    height: 100%;
 }
 
 #page-home {
     background: red ;
+    /*-------*/
     height: 100%;
+
+    display: flex;
+    flex-direction: column;
 }
 
 #page-projects {
     background: chartreuse ;
+    display: none;
 }
 
 #page-works {
     background: darkgoldenrod;
+    display: none;
 }
 
 /*-------------------page-home-------------------*/
