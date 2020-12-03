@@ -1,6 +1,7 @@
 * {
     margin: 0px ;
     font-family: "Segoe UI";
+    color: white;
 }
 
 html, body {
@@ -17,6 +18,19 @@ li {
     margin: 0px;
 }
 
+a:link {
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:visited {
+    color: white;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 #rideau {
     display: none ;
 }
@@ -25,7 +39,6 @@ li {
 #menu-page {
     /*background: green ;*/
     background: transparent;
-    color: white;
     padding: 10px;
 }
 
@@ -66,7 +79,8 @@ main {
 }
 
 #page-home {
-    background: red ;
+    /*background: red ;*/
+    background: transparent ;
     /*-------*/
     max-width: 600px;
     height: 100%;
@@ -131,7 +145,8 @@ hr {
     display: flex;
     justify-content: center;
     border-radius:100px;
-    background: darkblue;
+    /*background: darkblue;*/
+    background: transparent ;
 }
 
 #pdp img{
