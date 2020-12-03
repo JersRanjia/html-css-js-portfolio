@@ -6,7 +6,7 @@
     <title>Portfolio</title>
 </head>
 
-<body>
+<body onloadeddata="init_background()">
 
     <div id="rideau" >
         <div id="rideau-top"></div>
@@ -17,9 +17,9 @@
     <header>
         <nav id="menu-page">
             <ul>
-                <li id="home">Accueil</li>
-                <li id="projects">Projets</li>
-                <li id="works">Travaux</li>
+                <li id="home" class="menu-active" onclick="changePage('home')" >Accueil</li>
+                <li id="projects" onclick="changePage('projects')">Projets</li>
+                <li id="works" onclick="changePage('works')">Travaux</li>
             </ul>
         </nav>
     </header>
@@ -54,13 +54,13 @@
             <div id="contacts">
                 <ul>
                     <li id="fb">
-                        <a href="#"><img src="img/fb.png" alt="facebook_icon"></a>
+                        <a href="#"><img src="img/fb.svg" alt="facebook_icon"></a>
                     </li>
                     <li id="github">
-                        <a href="#"><img src="img/github.png" alt="github_icon"></a>
+                        <a href="https://github.com/JersRanjia"><img src="img/github.svg" alt="github_icon"></a>
                     </li>
                     <li id="mail">
-                        <a href="#"><img src="img/yahoo.png" alt="facebook_icon"></a>
+                        <a href="#"><img src="img/yahoo.svg" alt="facebook_icon"></a>
                     </li>
                 </ul>
             </div>
@@ -157,5 +157,6 @@
 </body>
 
 <script src="js/engine.js"></script>
+<script src="js/header-menu.js"></script>
 
 </html>

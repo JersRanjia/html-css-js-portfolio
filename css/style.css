@@ -51,7 +51,6 @@ a:hover {
 #menu-page ul li {
     margin-right: 20px;
     font-size: 2em;
-    font-weight: bold;
 }
 
 #menu-page ul li:hover{
@@ -81,12 +80,11 @@ main {
 #page-home {
     /*background: red ;*/
     background: transparent ;
-    /*-------*/
     max-width: 600px;
     height: 100%;
 
-    display: flex;
     /*display: none;*/
+    display: flex;
     flex-direction: column;
     margin: auto;
     justify-content: space-evenly;
@@ -94,18 +92,22 @@ main {
 }
 
 #page-projects {
-    background: chartreuse ;
-    /*display: none;*/
-    display:flex;
+    /*background: chartreuse ;*/
+    max-width: 600px;
+    height: 100%;
+    margin: auto;
+
+    display: none;
+    /*display:flex;*/
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap:wrap;
-    max-width: 600px;
-    margin: auto;
+
 }
 
 #page-works {
-    background: darkgoldenrod;
+    /*background: darkgoldenrod;*/
+    background: transparent;
     display: none;
     /*display:flex;*/
     flex-direction: row;
@@ -113,6 +115,11 @@ main {
     flex-wrap:wrap;
     max-width: 600px;
     margin: auto;
+}
+
+.menu-active {
+    display: flex;
+    text-decoration: underline;
 }
 
 /*-------------------page-home-------------------*/
@@ -157,6 +164,11 @@ hr {
     margin: 0px;
 }
 
+#contacts ul li a img:hover{
+    transform: scale(1.5);
+}
+
+
 #contacts ul{
     display: flex;
     flex-direction: row;
@@ -175,7 +187,8 @@ hr {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background: blue;
+    /*background: blue;*/
+    background: transparent;
 }
 
 .project * {
@@ -194,9 +207,28 @@ hr {
     height: 100%;
 }
 
-#scnd-year {
-    background: url("../img/iggl2.png");
-    background-size: 500px;
+#fond-first-year {
+    background: url("../img/iggl1.jpg");
+    background-size: 200px;
+}
+
+#fond-scnd-year {
+    background: url("../img/iggl2.jpg");
+    background-size: 200px;
+}
+
+#fond-thirst-year {
+    background: url("../img/iggl3.jpg");
+    background-size: 200px;
+}
+#fond-fourth-year {
+    background: url("../img/iggl4.jpg");
+    background-size: 200px;
+}
+
+#fond-fifth-year {
+    background: url("../img/iggl5.jpg");
+    background-size: 200px;
 }
 
 /*-------------------page-works-------------------*/
@@ -209,7 +241,8 @@ hr {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background: blue;
+    /*background: blue;*/
+    background: transparent;
 }
 
 .tr-mission {
