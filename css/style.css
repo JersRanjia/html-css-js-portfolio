@@ -287,7 +287,7 @@ hr {
 
 #modal-in {
     width: 600px;
-    background: darkred;
+    background: black;
     margin: auto;
     padding: 10px;
     border-radius: 10px;
@@ -345,7 +345,7 @@ hr {
 
 #modal-work-in {
     width: 600px;
-    background: #403a39;
+    background: black;
     margin: auto;
     padding: 10px;
     border-radius: 10px;

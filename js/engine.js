@@ -23,14 +23,18 @@ function popup_project(idProject) {
     var id_proj = "#" + idProject ;
     var titre = document.querySelector(id_proj + " h2").innerHTML
     var descri = document.querySelector(id_proj + " .description-project").innerHTML
+    var lang_project = document.querySelector(id_proj + " .lang-project").innerHTML
 
     var modal_fond = document.getElementById("modal-fond")
     var modal_out = document.getElementById("modal-out")
+
     var definition_project = document.getElementById("definition-project")
     var title_project = document.getElementById("title-project")
+    var techno_project = document.getElementById("techno-project")
 
     title_project.innerHTML = titre
     definition_project.innerHTML = descri
+    techno_project.innerHTML = lang_project
 
     modal_fond.style.display = "flex"
     modal_out.style.display = "flex"
