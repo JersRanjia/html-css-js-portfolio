@@ -17,8 +17,8 @@
     <header>
         <nav id="menu-page">
             <ul>
-                <li id="home" class="menu-active" onclick="changePage('home')" >Accueil</li>
-                <li id="projects" onclick="changePage('projects')">Projets</li>
+                <li id="home" onclick="changePage('home')" >Accueil</li>
+                <li id="projects" class="menu-active" onclick="changePage('projects')">Projets</li>
                 <li id="works" onclick="changePage('works')">Travaux</li>
             </ul>
         </nav>
@@ -74,31 +74,57 @@
             <div id="first-year" class="project">
                 <div id="fond-first-year" class="fond-project"></div>
                 <h1>1ère année</h1>
-                <h2>ISN<!--Réseau Social de L'ISPM--></h2>
+                <h2>ISN <!--Réseau Social de L'ISPM--></h2>
+                <p class="description-project">
+                    ISN [Ispm Social Network] est un plateforme de reseau social reservé uniquement aux interactions entre les élèves et les professeurs.
+                    On y retrouve donc les mêmes fonctionnalités qu'un reseau social tel que facebook et compagnie.
+                    <br/>
+                    Le seul defaut de ce projet est qu'il a été créer lors de notre début du cursus universitaire. Ainsi on ne peut dire qu'il soit très sécurisé et en plus les fonctionnalités installées ne sont pas très complètes.
+                </p>
             </div>
 
             <div id="scnd-year" class="project">
                 <div id="fond-scnd-year" class="fond-project"></div>
                 <h1>2ème année</h1>
                 <h2>UManage<!--Gestion d'école--></h2>
+                <p class="description-project">
+                    UManage est un logiciel de gestion d'école. C'est une application web qui permet à l'utilisateur de gérer l'inscription des élèves, le suivi des paiement des frais de scolarité.
+                    <br>
+                    Un des plus grands défis que l'on a essayer de relever est la mise en place d'une fonctionnalité qui permet de créer un emploi du temps raisonnable, et conforme aux activités des professeurs.
+                </p>
             </div>
 
             <div id="thirst-year" class="project">
                 <div id="fond-thirst-year" class="fond-project"></div>
                 <h1>3ème année</h1>
                 <h2>FileLocker<!--Verrouillage de fichier par reconnaissance faciale--></h2>
+                <p class="description-project">
+                    FileLocker est une application de bureau développé dans le but de pouvoir verouiller certain de nos fichier dans le cadre d'un ordi à usage partagé.
+                    <br/>
+                    On retrouve sa spécialité dans le fait d'utiliser le webcam de l'ordinateur pour verouiller un fichier et de ce fait de retrouver le fichier original en deverouillant avec le même visage clé.
+                </p>
             </div>
 
             <div id="fourth-year" class="project">
                 <div id="fond-fourth-year" class="fond-project"></div>
                 <h1>4ème année</h1>
                 <h2>SoulMeet<!--Application de rencontre--></h2>
+                <p class="description-project">
+                    SoulMeet est un site de rencontre que l'on a developpé dans le but de permettre à l'utilisateur de rencontre son âme soeur en premier lieu.
+                    <br/>
+                    Le plus de ce projet est de pouvoir utiliser les technologies de reconnaissance d'image. En effet, l'application offre la possibilité de rechercher les personnes de leurs goût suivant les caractéristiques de son visage, tel que la forme/taille du nez ou la forme des yeux.
+                </p>
             </div>
 
             <div id="fifth-year" class="project">
                 <div id="fond-fifth-year" class="fond-project"></div>
                 <h1>5ème année</h1>
                 <h2>IOC<!--Application de cours en ligne--></h2>
+                <p class="description-project">
+                    IOC [Ispm Online Course] est un projet dont l'existence est dûe à la situation actuelle qui est le confinement.
+                    <br/>
+                    C'est alors une application web qui permet aux élèves de suivre des cours à distance. On peut y retrouver les partages de vidéos, de pdf, des images.
+                </p>
             </div>
 
         </section>
@@ -155,6 +181,24 @@
                 </table>
             </div>
 
+        </section>
+
+        <section id="modal-fond"></section>
+
+        <section id="modal-out">
+            <div id="modal-in">
+                <div id="illustration">
+                    <img src="" alt="illustration-project"/>
+                </div>
+                <div id="about">
+                    <h1>Titre : <span id="title-project">ISN</span></h1>
+                    <h2>Déscription : </h2>
+                    <p id="definition">
+
+                    </p>
+                </div>
+
+            </div>
         </section>
 
     </main>
