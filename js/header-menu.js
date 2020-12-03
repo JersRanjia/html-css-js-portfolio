@@ -33,10 +33,26 @@ function changePage(menu_name) {
     var id_old_page = "page-" + active_menu.id
     var old_page = document.getElementById(id_old_page) ;
 
+    if (page == old_page) return ;
+    // animation menu
 
-    active_menu.classList.remove(class_menuActive)
-    old_page.style.display = "none" ;
-    menu_actu.classList.add(class_menuActive)
-    page.style.display = "flex" ;
+    old_page.onanimationend = function (ev) {
+
+        active_menu.classList.remove(class_menuActive)
+        old_page.style.display = "none" ;
+        menu_actu.classList.add(class_menuActive)
+        page.style.display = "flex" ;
+        old_page.classList.remove("disappearer")
+
+    };
+
+    page.onanimationend = function (ev) {
+
+        page.classList.remove("appearer")
+
+    }
+
+    old_page.classList.add("disappearer")
+    page.classList.add("appearer")
 
 }

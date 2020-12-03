@@ -10,7 +10,7 @@ html, body {
 
 body {
     /*background: url("../img/stars.jpg");*/
-    background: black;
+    background: #080808;
 }
 
 li {
@@ -80,6 +80,7 @@ header {
     color: #3498db;
     transform: scale(1.2);
 }
+
 /*-------------------main-------------------*/
 main {
     /*background: aqua;*/
@@ -130,6 +131,42 @@ main {
 .menu-active {
     display: flex;
     text-decoration: underline;
+}
+
+/*----------animation chagement page--------*/
+@keyframes disappear {
+    from {
+        transform: translateX(0);
+        opacity: 100%;
+    }
+    to {
+        opacity: 0%;
+        transform: translateX(-20px);
+    }
+
+}
+
+.disappearer {
+    animation-name: disappear;
+    animation-duration: 500ms;
+}
+
+@keyframes appear {
+    from {
+        transform: translateX(-20px);
+        display: flex;
+        opacity: 0%;
+    }
+    to {
+        opacity: 100%;
+        transform: translateX(0px);
+    }
+
+}
+
+.appearer {
+    animation-name: appear;
+    animation-duration: 500ms;
 }
 
 /*-------------------page-home-------------------*/
@@ -206,6 +243,10 @@ hr {
     background: transparent;
     cursor: pointer;
 
+}
+
+.lang-project {
+    display: none;
 }
 
 .project * {
