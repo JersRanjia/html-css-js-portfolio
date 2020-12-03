@@ -7,6 +7,11 @@ html, body {
     height: 100%;
 }
 
+body {
+    /*background: url("../img/stars.jpg");*/
+    background: black;
+}
+
 li {
     list-style-type: none ;
     margin: 0px;
@@ -18,7 +23,10 @@ li {
 
 /*-------------------header-------------------*/
 #menu-page {
-    background: green ;
+    /*background: green ;*/
+    background: transparent;
+    color: white;
+    padding: 10px;
 }
 
 #menu-page ul {
@@ -29,22 +37,46 @@ li {
 
 #menu-page ul li {
     margin-right: 20px;
+    font-size: 2em;
+    font-weight: bold;
 }
 
+#menu-page ul li:hover{
+    cursor: pointer;
+}
+
+#home:hover {
+    color: #e67e22;
+    transform: scale(1.2);
+}
+
+#projects:hover {
+    color: #2ecc71;
+    transform: scale(1.2);
+}
+
+#works:hover {
+    color: #3498db;
+    transform: scale(1.2);
+}
 /*-------------------main-------------------*/
 main {
-    background: aqua;
+    /*background: aqua;*/
     height: 100%;
 }
 
 #page-home {
     background: red ;
     /*-------*/
+    max-width: 600px;
     height: 100%;
 
     display: flex;
     /*display: none;*/
     flex-direction: column;
+    margin: auto;
+    justify-content: space-evenly;
+
 }
 
 #page-projects {
@@ -70,16 +102,26 @@ main {
 }
 
 /*-------------------page-home-------------------*/
-#page-home *{
-    margin: auto;
-}
+/*#page-home *{*/
+    /*margin: auto;*/
+/*}*/
 
 #self-description {
-    background: pink;
-    max-width: 500px;
+    /*background: pink;*/
+}
+
+hr {
+    display: block;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    width: 25%;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid white 1px;
 }
 
 .self-introduction {
+    margin-top: 10px;
     text-align: center;
     overflow-wrap: break-word;
 
